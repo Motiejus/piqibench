@@ -1,0 +1,14 @@
+/.eunit/
+/deps/
+/ebin/
+erl-project
+/priv/extra.config
+/rel/erl_piqibench/
+/DOC/*.html
+/DOC/*.png
+/DOC/edoc-info
+/DOC/*.css
+/log/
+/include/piqibench_rpc_piqi.hrl
+/src/piqibench_rpc_piqi.erl
+/src/piqibench_rpc_piqi_rpc.erl

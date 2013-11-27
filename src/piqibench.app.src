@@ -1,0 +1,14 @@
+{application, piqibench, [
+    {description, "piqibench"},
+    {vsn, git},
+    {registered, []},
+    {applications, [
+        kernel,
+        stdlib,
+        lager,
+        lager_syslog,
+        piqi_rpc
+    ]},
+    {mod, {piqibench_app, []}},
+    {env, []}
+]}.

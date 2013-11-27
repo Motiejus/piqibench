@@ -1,0 +1,13 @@
+.custom-field erlang-type-prefix
+.erlang-type-prefix "piqibench_"
+
+.function [
+    .name get
+    .input [
+        .field [ .name a .type int32 .code 1 ]
+        .field [ .name b .type int32 .code 2 ]
+    ]
+    .output [
+        .field [ .name sum .type int64 .code 1 ]
+    ]
+]
