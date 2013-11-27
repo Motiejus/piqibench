@@ -5,7 +5,6 @@ before_install:
     - sudo apt-get update -qq
     - sudo apt-get install piqi
 otp_release:
-   - R16B
    - R15B03
    - R15B02
    - R15B02
