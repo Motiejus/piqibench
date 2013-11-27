@@ -1,5 +1,5 @@
 
-.PHONY: all test clean release
+.PHONY: all quick test clean release go
 all:
 	rebar get-deps compile
 
