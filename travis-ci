@@ -17,4 +17,4 @@ make -C bench test T=30 || BENCH_FAIL=yes
 ./rel/erl_piqibench/bin/erl_piqibench stop
 
 test "$RET" = '{ "sum": 3 }'
-test "$BENCH_FAIL" = yes
+test "$BENCH_FAIL" != yes
