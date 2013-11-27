@@ -1,7 +1,7 @@
 #!/bin/sh
 set -xe
 
-rebar get-deps compile generate
+rebar compile generate
 rebar skip_deps=true eunit
 
 ./rel/erl_piqibench/bin/erl_piqibench start
@@ -9,7 +9,7 @@ sleep 2
 ./rel/erl_piqibench/bin/erl_piqibench ping
 
 RET=$(curl -H 'Content-Type: application/json' \
-    --data '{"a":1,"b":1}' \
+    --data '{"a":1,"b":2}' \
     http://127.0.0.1:8090/piqibench/get) || true
 
 ./rel/erl_piqibench/bin/erl_piqibench stop
