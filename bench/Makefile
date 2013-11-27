@@ -5,4 +5,5 @@ C ?= 10
 N ?= 1000000
 
 test:
-	ab -c $(C) -t $(T) -p ab.xml -T application/xml $(URL)
+	ab -c $(C) -t $(T) -p ab.xml \
+		-T application/xml -H "Accept: application/xml" $(URL)
