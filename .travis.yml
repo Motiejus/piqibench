@@ -1,4 +1,5 @@
 language: erlang
+script: "./travis-ci"
 before_install:
     - sudo add-apt-repository -y ppa:motiejus/piqi
     - sudo apt-get update -qq
