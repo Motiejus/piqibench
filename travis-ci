@@ -1,8 +1,12 @@
 #!/bin/sh
 set -xe
 
-rebar compile generate
-rebar skip_deps=true eunit
+# Need newer rebar to generate the release
+wget https://github.com/alavrik/piqi-erlang/wiki/rebar
+chmod +x rebar
+
+./rebar compile generate
+./rebar skip_deps=true eunit
 
 ./rel/erl_piqibench/bin/erl_piqibench start
 sleep 2
